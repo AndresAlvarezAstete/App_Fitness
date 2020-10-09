@@ -54,13 +54,26 @@ public class Clientes_act extends AppCompatActivity {
 
         int resultXtreme = pl.getXtreme() - saldo;  // Realizo operacion
 
+        //Inteligencia Roberto
         if (cliente.equals("Roberto") && planes.equals("Xtreme"))
         {
             //Mostrar precio plan
             text.setText("El precio del plan es: " + resultXtreme);
         }
 
-        if (cliente.equals("Roberto") && planes.equals("MindFullness"))
+        if (cliente.equals("Ivan") && planes.equals("MindFullness"))
+        {
+            text.setText("El precio del plan es: " + pl.getMindfullness());
+        }
+
+        //Inteligencia Ivan
+        if (cliente.equals("Roberto") && planes.equals("Xtreme"))
+        {
+            //Mostrar precio plan
+            text.setText("El precio del plan es: " + resultXtreme);
+        }
+
+        if (cliente.equals("Ivan") && planes.equals("MindFullness"))
         {
             text.setText("El precio del plan es: " + pl.getMindfullness());
         }
